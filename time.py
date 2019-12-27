@@ -5,10 +5,10 @@ while True:
     val = input("How many dots would you like to connect today? ")
     try:
         n = int(val)
-        if(n>0):
+        if(n>1):
             break
         else:
-            print("Please enter a positive number")
+            print("Please enter a positive number larger than 1")
     except ValueError:
         print("Please enter a number")
         
