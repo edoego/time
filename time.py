@@ -26,7 +26,7 @@ while count <= n:
     lsty.append(int(y))
 
 print(lstx)
-#print(lsty)
+print(lsty)
 
 #Calculate the time itself
 i=1
