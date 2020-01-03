@@ -2,7 +2,7 @@
 
 #Insert the number of dots, which should be a positive integer
 while True:
-    val = input("How many dots would you like to connect today? ")
+    val = input("How many dots would you like to connect? ")
     try:
         n = int(val)
         if(n>1):
@@ -10,7 +10,7 @@ while True:
         else:
             print("Please enter a positive number larger than 1")
     except ValueError:
-        print("Please enter a number")
+        print("Please enter an integer")
         
 #Insert coordinate pairs(should be integers) and organize them as lists
 lstx = []
@@ -24,14 +24,14 @@ while count <= n:
             x = int(val)
             break
         except ValueError:
-            print("Please enter a number")
+            print("Please enter an integer")
     while True:
         val = input("Please enter a coordinate y{}: ".format(count))
         try:
             y = int(val)
             break
         except ValueError:
-            print("Please enter a number")
+            print("Please enter an integer")
     count +=1
     lstx.append(int(x))
     lsty.append(int(y))
