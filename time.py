@@ -12,7 +12,7 @@ while True:
     except ValueError:
         print("Please enter a number")
         
-#Insert coordinate pairs and organize them as lists
+#Insert coordinate pairs(should be integers) and organize them as lists
 lstx = []
 lsty = []
 count = 1
