@@ -36,8 +36,8 @@ while count <= n:
     lstx.append(int(x))
     lsty.append(int(y))
 
-print(lstx)
-print(lsty)
+#print(lstx)
+#print(lsty)
 
 #Calculate the time itself
 i=1
