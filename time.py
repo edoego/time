@@ -13,7 +13,6 @@ while True:
         print("Please enter a number")
         
 #Insert coordinate pairs and organize them as lists
-T = 0 #Time
 lstx = []
 lsty = []
 count = 1
@@ -30,6 +29,7 @@ print(lsty)
 
 #Calculate the time itself
 i=1
+T = 0 #Time
 
 while i<n:
     T=T+max(abs(lstx[i]-lstx[i-1]),abs(lsty[i]-lsty[i-1]))
