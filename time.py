@@ -18,8 +18,20 @@ lsty = []
 count = 1
 
 while count <= n:
-    x = input("Please enter a coordinate x{}: ".format(count))
-    y = input("Please enter a coordinate y{}: ".format(count)) 
+    while True:
+        val = input("Please enter a coordinate x{}: ".format(count))
+        try:
+            x = int(val)
+            break
+        except ValueError:
+            print("Please enter a number")
+    while True:
+        val = input("Please enter a coordinate y{}: ".format(count))
+        try:
+            y = int(val)
+            break
+        except ValueError:
+            print("Please enter a number")
     count +=1
     lstx.append(int(x))
     lsty.append(int(y))
