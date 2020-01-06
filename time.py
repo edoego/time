@@ -1,5 +1,13 @@
 #!/usr/bin/env    python3.7
 
+def counter (n, listx, listy):
+    i=1
+    T = 0 #TimeMidlleValue
+    while i<n:
+        T=T+max(abs(listx[i]-listx[i-1]),abs(listy[i]-listy[i-1]))
+        i+=1    
+    return T
+
 #Insert the number of dots, which should be a positive integer
 while True:
     val = input("How many dots would you like to connect? ")
@@ -16,7 +24,6 @@ while True:
 lstx = []
 lsty = []
 count = 1
-
 while count <= n:
     while True:
         val = input("Please enter a coordinate x{}: ".format(count))
@@ -35,16 +42,10 @@ while count <= n:
     count +=1
     lstx.append(int(x))
     lsty.append(int(y))
-
 #print(lstx)
 #print(lsty)
+#test7
 
 #Calculate the time itself
-i=1
-T = 0 #Time
-
-while i<n:
-    T=T+max(abs(lstx[i]-lstx[i-1]),abs(lsty[i]-lsty[i-1]))
-    i+=1
-print(T)
-#test7
+Time = counter (n,lstx,lsty)
+print (Time)
