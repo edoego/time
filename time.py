@@ -47,4 +47,4 @@ while i<n:
     T=T+max(abs(lstx[i]-lstx[i-1]),abs(lsty[i]-lsty[i-1]))
     i+=1
 print(T)
-#test5
+#test6
