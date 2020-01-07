@@ -44,7 +44,7 @@ while count <= n:
     lsty.append(int(y))
 #print(lstx)
 #print(lsty)
-#test5
+#test6
 #Calculate the time itself
 Time = counter (n,lstx,lsty)
 print (Time)
