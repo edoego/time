@@ -1,3 +1,3 @@
 #!/bin/sh
-f = open("test.txt", "w")
+f = open("unittestresult.txt", "w")
 print "Hello World"
