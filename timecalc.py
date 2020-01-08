@@ -1,10 +1,10 @@
 #!/usr/bin/env    python3.7
 
-def counter (n, listx, listy):
+def counter (n, lstx, lsty):
     i=1
     T = 0 #TimeMidlleValue
     while i<n:
-        T=T+max(abs(listx[i]-listx[i-1]),abs(listy[i]-listy[i-1]))
+        T=T+max(abs(lstx[i]-lstx[i-1]),abs(lsty[i]-lsty[i-1]))
         i+=1    
     return T
 
@@ -44,7 +44,7 @@ while count <= n:
     lsty.append(int(y))
 #print(lstx)
 #print(lsty)
-#test6
+#test7
 #Calculate the time itself
 Time = counter (n,lstx,lsty)
 print (Time)
