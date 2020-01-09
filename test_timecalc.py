@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env    python3.7
 
 import unittest
 import timecalc
@@ -14,8 +14,6 @@ class TestTime(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-
 #f = open("unittestresult.txt", "w")
 #f.write("SUCCESS baby2")
 #f.close()
-#test

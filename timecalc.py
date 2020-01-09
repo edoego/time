@@ -7,48 +7,47 @@ def counter (n, lstx, lsty):
         T=T+max(abs(lstx[i]-lstx[i-1]),abs(lsty[i]-lsty[i-1]))
         i+=1    
     return T
-
+    
+def main():
 #Insert the number of dots, which should be a positive integer
-while True:
-    val = input("How many dots would you like to connect? ")
-    try:
-        n = int(val)
-        if(n>1):
-            break
-        else:
-            print("Please enter a positive number larger than 1")
-    except ValueError:
-        print("Please enter an integer")
-        
-#Insert coordinate pairs(should be integers) and organize them as lists
-lstx = []
-lsty = []
-count = 1
-while count <= n:
     while True:
-        val = input("Please enter a coordinate x{}: ".format(count))
+        val = input("How many dots would you like to connect? ")
         try:
-            x = int(val)
-            break
+            n = int(val)
+            if(n>1):
+                break
+            else:
+                print("Please enter a positive number larger than 1")
         except ValueError:
             print("Please enter an integer")
-    while True:
-        val = input("Please enter a coordinate y{}: ".format(count))
-        try:
-            y = int(val)
-            break
-        except ValueError:
-            print("Please enter an integer")
-    count +=1
-    lstx.append(int(x))
-    lsty.append(int(y))
-#print(lstx)
-#print(lsty)
-<<<<<<< HEAD
-#test7
-=======
-#test5
->>>>>>> 9c48ab772ded8f69446a77d1b8657bae4009dc24
-#Calculate the time itself
-Time = counter (n,lstx,lsty)
-print (Time)
+            
+    #Insert coordinate pairs(should be integers) and organize them as lists
+    lstx = []
+    lsty = []
+    count = 1
+    while count <= n:
+        while True:
+            val = input("Please enter a coordinate x{}: ".format(count))
+            try:
+                x = int(val)
+                break
+            except ValueError:
+                print("Please enter an integer")
+        while True:
+            val = input("Please enter a coordinate y{}: ".format(count))
+            try:
+                y = int(val)
+                break
+            except ValueError:
+                print("Please enter an integer")
+        count +=1
+        lstx.append(int(x))
+        lsty.append(int(y))
+    #print(lstx)
+    #print(lsty)
+    #Calculate the time itself
+    Time = counter (n,lstx,lsty)
+    print (Time)
+
+if __name__ == '__main__':
+    main()
