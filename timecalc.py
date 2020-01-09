@@ -1,6 +1,6 @@
-#!/usr/bin/env    python3.7
+#!/usr/bin/env    python2.7
 
-def counter (n, lstx, lsty):
+def chronos (n, lstx, lsty):
     i=1
     T = 0 #TimeMidlleValue
     while i<n:
@@ -46,7 +46,7 @@ def main():
     #print(lstx)
     #print(lsty)
     #Calculate the time itself
-    Time = counter (n,lstx,lsty)
+    Time = chronos (n,lstx,lsty)
     print (Time)
 
 if __name__ == '__main__':
