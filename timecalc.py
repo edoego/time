@@ -44,7 +44,7 @@ def main():
         lstx.append(int(x))
         lsty.append(int(y))
     #print(lstx)
-    #print(lsty)
+    #print(lsty)test
     #Calculate the time itself
     Time = chronos (n,lstx,lsty)
     print (Time)
