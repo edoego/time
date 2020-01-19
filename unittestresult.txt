@@ -1,15 +1,7 @@
-test_chronos1 (__main__.TestTime) ... FAIL
+test_chronos1 (__main__.TestTime) ... ok
 test_chronos2 (__main__.TestTime) ... ok
-
-======================================================================
-FAIL: test_chronos1 (__main__.TestTime)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_timecalc.py", line 11, in test_chronos1
-    self.assertEqual(expected, result)
-AssertionError: 5 != 4
 
 ----------------------------------------------------------------------
 Ran 2 tests in 0.000s
 
-FAILED (failures=1)
+OK
