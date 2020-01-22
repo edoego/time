@@ -12,7 +12,7 @@ class TestTime(unittest.TestCase):
         
     def test_chronos2(self):
         result = timecalc.chronos(3, [-3, 3, 5], [0, 5, -1])
-        expected = 13
+        expected = 16
         self.assertEqual(expected, result)
         
 import sys 
