@@ -7,7 +7,7 @@ class TestTime(unittest.TestCase):
 
     def test_chronos1(self):
         result = timecalc.chronos(2, [0, 3], [1, 5])
-        expected = 4
+        expected = 5
         self.assertEqual(expected, result)
         
     def test_chronos2(self):
