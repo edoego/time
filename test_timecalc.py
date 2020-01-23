@@ -15,6 +15,7 @@ class TestTime(unittest.TestCase):
         expected = 16
         self.assertEqual(expected, result)
         
+#logging test output to a file
 import sys 
   
 def main(out = sys.stderr, verbosity = 2): 
